@@ -6,8 +6,8 @@
     "mongoose": "^8.12.1",
     "nodemon": "^3.1.9"
   },
-  "name": "geetaback",
-  "description": "\"# geeta_backend\"",
+  "name": "Thanganat-Backend",
+  "description": "\"# Thanganat-Backend\"",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
@@ -17,13 +17,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/surbhi2911/geeta_backend.git"
+    "url": "git+https://github.com/Mital-123/Thanganat-Backend.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/surbhi2911/geeta_backend/issues"
+    "url": "https://github.com/Mital-123/Thanganat-Backend/issues"
   },
-  "homepage": "https://github.com/surbhi2911/geeta_backend#readme"
+  "homepage": "https://github.com/Mital-123/Thanganat-Backend#readme"
 }

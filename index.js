@@ -10,7 +10,7 @@ app.use(cors());
 
 // MongoDB Connection
 mongoose
-    .connect("mongodb+srv://surbhipansuriya772:ROxZBDOlzQjlF9iD@solardb.3lyp9.mongodb.net/Geeta")
+    .connect("mongodb+srv://surbhipansuriya772:ROxZBDOlzQjlF9iD@solardb.3lyp9.mongodb.net/Thanganat-Navratri")
     .then(() => console.log("MongoDB Connected"))
     .catch((err) => console.log("DB Connection Error:", err));
 
@@ -19,11 +19,11 @@ const ItemSchema = new mongoose.Schema({
     name: { type: String, required: true },
     email: { type: String },
     phnumber: { type: Number, required: true, unique: true },
-    area: { type: String, required: true },
-    pass: { type: Number, enum: [1, 2, 3, 4, 5], default: 1 }
+    // area: { type: String, required: true },
+    pass: { type: Number, required: true }
 }, { timestamps: true });
 
-const Item = mongoose.model("data", ItemSchema);
+const Item = mongoose.model("Thanganat-Data", ItemSchema);
 
 // Create API (POST) with Unique Validation
 app.post("/", async (req, res) => {
@@ -62,7 +62,7 @@ app.get("/", async (req, res) => {
 });
 
 // Start Server
-const PORT = 4000;
+const PORT = 5000;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
