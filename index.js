@@ -17,10 +17,11 @@ mongoose
 // Schema & Model
 const ItemSchema = new mongoose.Schema({
     name: { type: String, required: true },
-    email: { type: String },
+    // email: { type: String },
     phnumber: { type: Number, required: true, unique: true },
     // area: { type: String, required: true },
-    pass: { type: Number, enum: [1, 2, 3, 4], default: 1 }
+    pass: { type: Number, enum: [1, 2], default: 1 },
+    childrenpass: { type: Number, enum: [1, 2], default: 1 }
 }, { timestamps: true });
 
 const Item = mongoose.model("Thanganat-Data", ItemSchema);
