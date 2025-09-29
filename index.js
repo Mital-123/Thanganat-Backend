@@ -20,7 +20,7 @@ const ItemSchema = new mongoose.Schema({
     email: { type: String },
     phnumber: { type: Number, required: true, unique: true },
     // area: { type: String, required: true },
-    pass: { type: Number, required: true }
+    pass: { type: Number, enum: [1, 2, 3, 4], default: 1 }
 }, { timestamps: true });
 
 const Item = mongoose.model("Thanganat-Data", ItemSchema);
