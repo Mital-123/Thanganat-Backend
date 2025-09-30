@@ -21,7 +21,7 @@ const ItemSchema = new mongoose.Schema({
     phnumber: { type: Number, required: true, unique: true },
     // area: { type: String, required: true },
     pass: { type: Number, enum: [1, 2], default: 1 },
-    childrenpass: { type: Number, enum: [1, 2], default: 1 }
+    childrenpass: { type: Number, enum: [0, 1, 2], default: 0 }
 }, { timestamps: true });
 
 const Item = mongoose.model("Thanganat-Data", ItemSchema);
